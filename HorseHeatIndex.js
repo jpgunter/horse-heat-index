@@ -2,8 +2,16 @@
   var OPEN_MAP_KEY = "b43097d766ab89da4af1e8fdd79dcb7b";
   var WEATHER_API = "https://api.openweathermap.org/data/2.5/weather"
   
+  function tempKtoF(tempK){
+    var tempC = tempK - 273.15;
+    var tempF = (1.8 * tempC) + 32;
+    return tempF;
+  }
+  
   function handleWeather(response){
-    $("#output").html(response.main.humidity);
+    var tempInF = tempKtoF(response.main.temp);
+    var index = response.main.humidity + tempInF;
+    $("#output").html(index);
     //show the workout time
   }
 
