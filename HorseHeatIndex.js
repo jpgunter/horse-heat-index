@@ -10,7 +10,7 @@
   
   function handleWeather(response){
     var tempInF = tempKtoF(response.main.temp);
-    var index = response.main.humidity + tempInF;
+    var index = Math.round(response.main.humidity + tempInF);
     $("#output").html(index);
     //show the workout time
   }
