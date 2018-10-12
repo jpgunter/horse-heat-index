@@ -1,3 +1,19 @@
-.heat-index {
+#container {
     font-size: 18px;
+}
+
+.status-green {
+    background-color:green;
+}
+
+.status-yellow {
+    background-color:yellow;
+}
+
+.status-orange {
+    background-color:orange;
+}
+
+.status-red {
+    background-color:red;
 }
