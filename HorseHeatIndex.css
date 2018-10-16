@@ -16,6 +16,10 @@
     border-bottom: 1px solid black;
 }
 
+#location {
+    font-size: 60px;
+}
+
 .status-green {
     background-color: #dff0d8;
     border-color: #d0e9c6;
