@@ -38,6 +38,7 @@
     var advisory = getAdvisory(index);
     $("#container").removeClass().addClass("status-"+advisory.status);
     $("#index").html(index);
+    $("#location").html(response.name + ", " + response.sys.country);
     $("#advisory").html(advisory.advisory);
   }
 
